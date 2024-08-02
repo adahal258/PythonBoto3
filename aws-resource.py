@@ -24,7 +24,7 @@ def ec2_status():
         for j in range(0, len(aws_ec2_available_instance)):
             print('########################################################')
             aws_ec2_ins = aws_ec2_available_instance[j]
-            # aws_ec2_instanceId = aws_ec2_ins.get('InstanceId')
+            aws_ec2_instanceId = aws_ec2_ins.get('InstanceId')
             instance_ids.append(aws_ec2_instanceId)
             print(str(instance_count+1) + '. '+ str(aws_ec2_ins.get("Tags")[0].get("Value")) + ":   " + str(aws_ec2_instanceId))
             print(str())
