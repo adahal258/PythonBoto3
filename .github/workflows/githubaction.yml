@@ -23,6 +23,8 @@ jobs:
         pip install pytest
         pip install boto3
 
+
+
     - name: Run tests
       run: |
-        python -m pytest ./aws-resource.py
+        pytest ./test_aws_ec2_manager.py
