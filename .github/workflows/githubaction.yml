@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:
@@ -24,5 +24,4 @@ jobs:
 
     - name: Run tests
       run: |
-        cd src
         python -m pytest ./aws-resource.py
