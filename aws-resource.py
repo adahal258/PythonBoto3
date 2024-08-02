@@ -6,8 +6,7 @@ Created: 7/29/2024
 This program will load up all the aws services running/ stopped or any computing resources attached with the organization
 Will count the instances available:
 list available instance-id and allow user to choose.
-Will run my instance specified. Right now I only have one instances but can be modified to run all at once or stop all at once.
-List aws resources: S3 bucket, IAM user, billing, lambda...
+Will run my instance specified,stop or terminate. Right now I only have one instances but can be modified to run all at once or stop all at once.
 
 '''
 import boto3 as bt
@@ -154,5 +153,4 @@ def terminate_the_instance(aws_ec2):
 
 if __name__ == '__main__':
     aws_ami_info()
- 
 
